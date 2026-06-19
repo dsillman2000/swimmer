@@ -2,16 +2,17 @@ SHELL := /bin/bash
 
 .PHONY: install serve build css clean
 
-NVM_SH := source "$(HOME)/.nvm/nvm.sh" &&
-
 install:
 	bundle install
-	$(NVM_SH) npm install
+	npm install
 
 css:
-	$(NVM_SH) npx @tailwindcss/cli -i _css/styles.css -o styles.css --minify
+	npx @tailwindcss/cli -i _css/styles.css -o styles.css --minify
 
 serve: css
+	npx @tailwindcss/cli -i _css/styles.css -o styles.css --watch & \
+	CSS_PID=$$!; \
+	trap "kill $$CSS_PID 2>/dev/null" EXIT; \
 	bundle exec jekyll serve --livereload --host 0.0.0.0
 
 build: css

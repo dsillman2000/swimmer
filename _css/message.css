@@ -1,7 +1,7 @@
 .message {
   padding: var(--spacer);
   margin-bottom: var(--spacer);
-  color: var(--color-gray-900);
-  background-color: var(--color-yellow-100);
+  color: var(--highlight-color);
+  background-color: var(--highlight-bg);
   border-radius: var(--radius-default);
 }

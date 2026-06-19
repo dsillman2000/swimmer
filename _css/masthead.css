@@ -2,12 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--spacer);
   padding-top: var(--spacer);
   padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-3);
 }
 
 .masthead-title {
+  margin-top: 0;
   margin-bottom: 0;
 
   a {
@@ -22,6 +24,7 @@
 }
 
 .theme-toggle {
+  flex-shrink: 0;
   background: none;
   border: none;
   cursor: pointer;

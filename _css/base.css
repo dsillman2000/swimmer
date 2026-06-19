@@ -59,6 +59,7 @@ thead th {
 
 mark {
   padding: .15rem;
-  background-color: var(--color-yellow-100);
+  color: var(--highlight-color);
+  background-color: var(--highlight-bg);
   border-radius: .125rem;
 }
