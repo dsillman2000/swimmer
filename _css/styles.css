@@ -11,6 +11,7 @@
 @import "tailwindcss/theme" layer(theme);
 @import "tailwindcss/utilities" layer(utilities);
 
+@import "./fonts.css";
 @import "./theme.css";
 @import "./base.css";
 @import "./type.css";
@@ -19,6 +20,7 @@
 @import "./layout.css";
 @import "./masthead.css";
 @import "./posts.css";
+@import "./sidebar.css";
 @import "./pagination.css";
 @import "./message.css";
 @import "./toc.css";

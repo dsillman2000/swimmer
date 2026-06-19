@@ -18,7 +18,12 @@
       </header>
 
       <main>
-        {{ content }}
+        <div class="post-with-sidebar">
+          {% include post-sidebar.html %}
+          <div class="post-content-area">
+            {{ content }}
+          </div>
+        </div>
       </main>
 
       <footer class="footer">
@@ -27,6 +32,30 @@
         </small>
       </footer>
     </div>
+
+    <script>
+      (function () {
+        var toggle = document.querySelector(".post-sidebar-toggle");
+        var sidebar = document.querySelector(".post-sidebar");
+        var backdrop = document.querySelector(".post-sidebar-backdrop");
+        if (toggle && sidebar && backdrop) {
+          function open() {
+            sidebar.classList.add("open");
+            backdrop.classList.add("open");
+            toggle.setAttribute("aria-expanded", "true");
+          }
+          function close() {
+            sidebar.classList.remove("open");
+            backdrop.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+          toggle.addEventListener("click", function () {
+            sidebar.classList.contains("open") ? close() : open();
+          });
+          backdrop.addEventListener("click", close);
+        }
+      })();
+    </script>
 
     <script>
       (function () {

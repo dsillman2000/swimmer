@@ -1,7 +1,9 @@
 ---
-layout: post
-title: Introduction
+layout: default
+title: Home
 ---
+
+<img class="landing-logo" src="{{ 'assets/swimmer-logo.svg' | relative_url }}" alt="Swimmer" width="160" height="160">
 
 Swimmer is a Jekyll theme forked from [Poole](https://getpoole.com) by [@mdo](https://twitter.com/mdo). The name comes from "David's Poole" &rarr; David Schwimmer &rarr; Swimmer.
 
