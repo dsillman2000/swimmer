@@ -1,14 +1,10 @@
-// Body resets
-//
-// Update the foundational and global aspects of the page.
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: var(--body-font);
+  font-family: var(--font-body);
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
   color: var(--body-color);
@@ -17,11 +13,9 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
-// No `:visited` state is required by default (browsers will use `a`)
 a {
   color: var(--link-color);
 
-  // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
     color: var(--link-hover-color);
@@ -36,7 +30,7 @@ img {
   display: block;
   max-width: 100%;
   margin-bottom: var(--spacer);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius-default);
 }
 
 table {
@@ -65,6 +59,6 @@ thead th {
 
 mark {
   padding: .15rem;
-  background-color: var(--yellow-100);
+  background-color: var(--color-yellow-100);
   border-radius: .125rem;
 }

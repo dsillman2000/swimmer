@@ -1,6 +1,6 @@
 # Setup
 title: Swimmer
-tagline: An invitingly simple Jekyll theme
+tagline: A no frills Jekyll theme
 url: https://github.com/dsillman2000/swimmer
 paginate: 1
 baseurl: ""
@@ -17,14 +17,14 @@ exclude:
   - .editorconfig
   - .git
   - .jekyll-cache
+  - _css
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
   - README.md
-
-sass:
-  sass_dir: _sass
-  style: :compressed
+  - node_modules
+  - package.json
+  - package-lock.json
 
 # Options
 
@@ -37,4 +37,4 @@ author:
   url: https://github.com/dsillman2000
 
 # Custom vars
-version: 0.1.0
+version: 3.0.0
