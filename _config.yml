@@ -1,7 +1,7 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
+title: Swimmer
+tagline: An invitingly simple Jekyll theme
+url: https://github.com/dsillman2000/swimmer
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -33,9 +33,8 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: David Sillman
+  url: https://github.com/dsillman2000
 
 # Custom vars
-version: 3.0.0
+version: 0.1.0
