@@ -4,6 +4,8 @@ Swimmer is an opinionated yet invitingly simple Jekyll theme that extends and bu
 
 Poole provides a clear and concise foundation for any Jekyll site. Swimmer takes that foundation and adds a dedicated landing page, mobile sidebar, dual-mechanism dark mode, self-hosted variable fonts, and Tailwind CSS v4 styling.
 
+See it live at [swimmer.dsillman.com](https://swimmer.dsillman.com).
+
 <p>
   <img src="docs/screenshot-light.png" alt="Swimmer light mode" width="49%">
   <img src="docs/screenshot-dark.png" alt="Swimmer dark mode" width="49%">
@@ -75,8 +77,7 @@ Swimmer extends and builds off of [Poole](https://getpoole.com), the foundationa
 
 ## Author
 
-**David Sillman**
-- <https://github.com/dsillman2000>
+**David Sillman** — [dsillman.com](https://www.dsillman.com) · [GitHub](https://www.github.com/dsillman2000)
 
 Originally built as [Poole](https://getpoole.com) by **Mark Otto** ([@mdo](https://github.com/mdo)).
 
