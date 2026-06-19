@@ -8,7 +8,7 @@
   margin-bottom: var(--spacer-3);
 }
 
-@media (max-width: 74.999rem) {
+@media (max-width: 50rem) {
   .masthead {
     padding-left: 2rem;
   }

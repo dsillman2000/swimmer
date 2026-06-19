@@ -33,4 +33,7 @@
     {% endfor %}
   </ul>
   {% endif %}
+  {% unless page.url == '/archive/' %}
+  <a class="post-sidebar-archive" href="{{ site.baseurl }}/archive/">Archive (all posts)</a>
+  {% endunless %}
 </aside>

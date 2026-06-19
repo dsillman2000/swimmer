@@ -49,7 +49,7 @@
   --code-bg: #eef0f5;
 
   --highlight-color: var(--color-gray-900);
-  --highlight-bg: #bee5f2;
+  --highlight-bg: #cfe9ff;
 
   --spacer: 1rem;
   --spacer-2: calc(var(--spacer) * 1.5);
@@ -71,7 +71,7 @@
     --code-bg: #131c2e;
 
     --highlight-color: var(--color-gray-200);
-    --highlight-bg: #1e4a5e;
+    --highlight-bg: #394d73;
   }
 }
 
@@ -89,5 +89,5 @@
   --code-bg: #131c2e;
 
   --highlight-color: var(--color-gray-200);
-  --highlight-bg: #1e4a5e;
+  --highlight-bg: #394d73;
 }
