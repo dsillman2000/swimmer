@@ -36,4 +36,5 @@ screenshots:
 secrets:
 	set -a && source .env && set +a && \
 	echo "$$CLOUDFLARE_API_TOKEN" | gh secret set CLOUDFLARE_API_TOKEN && \
-	echo "$$CLOUDFLARE_ACCOUNT_ID" | gh secret set CLOUDFLARE_ACCOUNT_ID
+	echo "$$CLOUDFLARE_ACCOUNT_ID" | gh secret set CLOUDFLARE_ACCOUNT_ID && \
+	echo "$$CLOUDFLARE_ZONE_ID" | gh secret set CLOUDFLARE_ZONE_ID
