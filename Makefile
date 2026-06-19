@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: install serve build css clean fonts
+.PHONY: install serve build css clean fonts secrets
 
 FNM_SH := eval "$$(fnm env)" &&
 
@@ -32,3 +32,8 @@ fonts:
 
 screenshots:
 	./regen-screenshots.sh
+
+secrets:
+	set -a && source .env && set +a && \
+	echo "$$CLOUDFLARE_API_TOKEN" | gh secret set CLOUDFLARE_API_TOKEN && \
+	echo "$$CLOUDFLARE_ACCOUNT_ID" | gh secret set CLOUDFLARE_ACCOUNT_ID

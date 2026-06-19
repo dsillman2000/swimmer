@@ -15,4 +15,5 @@ footer {
   display: block;
   margin: 0 auto var(--spacer-3);
   border-radius: var(--radius-default);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
 }

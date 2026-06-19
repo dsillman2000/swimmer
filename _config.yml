@@ -1,7 +1,7 @@
 # Setup
 title: Swimmer
 tagline: An invitingly simple Jekyll theme
-url: https://github.com/dsillman2000/swimmer
+url: https://swimmer.dsillman.com
 baseurl: ""
 permalink: pretty
 
@@ -26,6 +26,7 @@ exclude:
   - package-lock.json
   - AGENTS.md
   - .opencode
+  - .github
 
 # Options
 
@@ -39,3 +40,4 @@ author:
 
 # Custom vars
 version: 3.0.0
+repository: https://github.com/dsillman2000/swimmer
