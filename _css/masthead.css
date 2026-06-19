@@ -8,6 +8,12 @@
   margin-bottom: var(--spacer-3);
 }
 
+@media (max-width: 74.999rem) {
+  .masthead {
+    padding-left: 2rem;
+  }
+}
+
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
