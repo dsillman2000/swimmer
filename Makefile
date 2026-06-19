@@ -2,15 +2,17 @@ SHELL := /bin/bash
 
 .PHONY: install serve build css clean
 
+FNM_SH := eval "$$(fnm env)" &&
+
 install:
 	bundle install
-	npm install
+	$(FNM_SH) npm install
 
 css:
-	npx @tailwindcss/cli -i _css/styles.css -o styles.css --minify
+	$(FNM_SH) npx @tailwindcss/cli -i _css/styles.css -o styles.css --minify
 
 serve: css
-	npx @tailwindcss/cli -i _css/styles.css -o styles.css --watch & \
+	$(FNM_SH) npx @tailwindcss/cli -i _css/styles.css -o styles.css --watch & \
 	CSS_PID=$$!; \
 	trap "kill $$CSS_PID 2>/dev/null" EXIT; \
 	bundle exec jekyll serve --livereload --host 0.0.0.0
@@ -20,3 +22,6 @@ build: css
 
 clean:
 	rm -rf _site .jekyll-cache
+
+screenshots:
+	./regen-screenshots.sh

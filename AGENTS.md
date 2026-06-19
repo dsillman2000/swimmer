@@ -23,7 +23,7 @@ There are no linters, type checkers, or automated tests configured.
 - **Templates:** Liquid + HTML (`_layouts/`, `_includes/`)
 - **Content:** Markdown with YAML front matter (`_posts/`)
 - **Build orchestration:** GNU Make
-- **Node:** managed via nvm; only dev dependency is `@tailwindcss/cli`
+- **Node:** managed via fnm; dev dependencies are `@tailwindcss/cli` and `puppeteer`
 
 ## CSS Architecture
 

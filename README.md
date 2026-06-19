@@ -4,6 +4,11 @@ Swimmer is David's fork of [Poole](https://getpoole.com), the foundational Jekyl
 
 Swimmer provides a clear and concise foundational setup for any Jekyll site, furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
 
+<p>
+  <img src="docs/screenshot-light.png" alt="Swimmer light mode" width="49%">
+  <img src="docs/screenshot-dark.png" alt="Swimmer dark mode" width="49%">
+</p>
+
 ## Contents
 
 - [Usage](#usage)
@@ -16,15 +21,15 @@ Swimmer provides a clear and concise foundational setup for any Jekyll site, fur
 
 ### 1. Install dependencies
 
-Swimmer is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem and related dependencies:
+Swimmer is built on Jekyll and uses [Tailwind CSS](https://tailwindcss.com) v4 (via `@tailwindcss/cli`) to generate its CSS. Before getting started, install all Ruby and Node dependencies:
 
 ```bash
-$ gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag
+$ make install
 ```
 
-**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
+This runs `bundle install` and `npm install`. You'll need Ruby 3.3.0, Bundler, and Node (managed via fnm).
 
-**Need syntax highlighting?** Swimmer includes support for Pygments or Rouge, so install your gem of choice to make use of the built-in styling. Read more about this in the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting).
+**Need syntax highlighting?** Swimmer includes support for Rouge, so install the gem to make use of the built-in styling. Read more about this in the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting).
 
 ### 2a. Quick start
 
@@ -32,14 +37,14 @@ To help anyone with any level of familiarity with Jekyll quickly get started, Sw
 
 ### 2b. Roll your own Jekyll site
 
-Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Swimmer and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `assets/` for CSS, JS, etc.).
+Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Swimmer and then copy what you need (likely `_layouts/`, `_includes/`, `_css/`, `*.html` files, `atom.xml` for RSS, and `assets/` for images and icons).
 
 ### 3. Running locally
 
 To see your Jekyll site with Swimmer applied, start a Jekyll server. In Terminal, from `/swimmer` (or whatever your Jekyll site's root directory is named):
 
 ```bash
-$ jekyll serve
+$ make serve
 ```
 
 Open <http://localhost:4000> in your browser, and voila.
@@ -48,9 +53,10 @@ Open <http://localhost:4000> in your browser, and voila.
 
 If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
 
-1. Fork this repo and switch to the `gh-pages` branch.
-  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
-  2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/swimmer`, use `http://username.github.io/swimmer/`. **Be sure to include the trailing slash.**
+1. Push your repo to GitHub.
+   1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
+   2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/swimmer`, use `http://username.github.io/swimmer/`. **Be sure to include the trailing slash.**
+2. Configure GitHub Pages to deploy from your default branch (or set up a GitHub Actions workflow).
 3. Done! Head to your GitHub Pages URL or custom domain.
 
 No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
