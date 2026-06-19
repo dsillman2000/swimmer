@@ -25,6 +25,7 @@ exclude:
   - package.json
   - package-lock.json
   - AGENTS.md
+  - .opencode
 
 # Options
 

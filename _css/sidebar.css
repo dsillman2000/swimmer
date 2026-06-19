@@ -122,12 +122,12 @@
 
   .post-sidebar {
     position: fixed;
-    top: 6rem;
+    top: 7rem;
     left: calc((100vw - 45rem) / 2 - 12rem - var(--spacer-2));
     bottom: auto;
     z-index: auto;
     width: 12rem;
-    max-height: calc(100vh - 7rem);
+    max-height: calc(100vh - 8rem);
     padding: 0;
     overflow-y: auto;
     background-color: transparent;
