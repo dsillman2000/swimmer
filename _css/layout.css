@@ -10,3 +10,9 @@ footer {
   margin-top: var(--spacer-3);
   margin-bottom: var(--spacer-3);
 }
+
+.landing-logo {
+  display: block;
+  margin: 0 auto var(--spacer-3);
+  border-radius: var(--radius-default);
+}

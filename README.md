@@ -2,12 +2,25 @@
 
 Swimmer is David's fork of [Poole](https://getpoole.com), the foundational Jekyll theme by [@mdo](https://twitter.com/mdo). The name comes from "David's Poole" &rarr; David Schwimmer &rarr; Swimmer.
 
-Swimmer provides a clear and concise foundational setup for any Jekyll site, furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
+Swimmer is an opinionated, full-featured Jekyll theme with a dedicated landing page, mobile sidebar, dual-mechanism dark mode, and Tailwind CSS v4 styling.
 
 <p>
   <img src="docs/screenshot-light.png" alt="Swimmer light mode" width="49%">
   <img src="docs/screenshot-dark.png" alt="Swimmer dark mode" width="49%">
 </p>
+
+## Features
+
+- **Dedicated landing page** — `index.md` serves as a standalone homepage with logo, not a paginated post listing
+- **Minimalist masthead** — just site title, tagline, and dark mode toggle; no navigation bar
+- **Post sidebar** — hamburger-triggered overlay on mobile, fixed-position list on desktop (≥75rem), showing the 10 most recent posts and any related posts
+- **Dark mode** — respects `prefers-color-scheme`, offers a manual toggle (sun/moon icons), persists preference in `localStorage`, and prevents flash of wrong theme
+- **Self-hosted variable fonts** — Inter (body) and Roboto Mono (code), preloaded as WOFF2
+- **Tailwind CSS v4** — modular CSS via `@tailwindcss/cli`, compiled to a single minified `styles.css`
+- **Syntax highlighting** — Rouge with separate light and dark color schemes
+- **Archive page** — posts grouped by month/year
+- **Atom/RSS feed** — built-in `atom.xml`
+- **SEO** — `jekyll-seo-tag` integrated in `<head>`
 
 ## Contents
 
@@ -21,49 +34,40 @@ Swimmer provides a clear and concise foundational setup for any Jekyll site, fur
 
 ### 1. Install dependencies
 
-Swimmer is built on Jekyll and uses [Tailwind CSS](https://tailwindcss.com) v4 (via `@tailwindcss/cli`) to generate its CSS. Before getting started, install all Ruby and Node dependencies:
-
 ```bash
 $ make install
 ```
 
 This runs `bundle install` and `npm install`. You'll need Ruby 3.3.0, Bundler, and Node (managed via fnm).
 
-**Need syntax highlighting?** Swimmer includes support for Rouge, so install the gem to make use of the built-in styling. Read more about this in the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting).
-
-### 2a. Quick start
-
-To help anyone with any level of familiarity with Jekyll quickly get started, Swimmer includes everything you need for a basic Jekyll site. To that end, just download Swimmer and start up Jekyll.
-
-### 2b. Roll your own Jekyll site
-
-Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Swimmer and then copy what you need (likely `_layouts/`, `_includes/`, `_css/`, `*.html` files, `atom.xml` for RSS, and `assets/` for images and icons).
-
-### 3. Running locally
-
-To see your Jekyll site with Swimmer applied, start a Jekyll server. In Terminal, from `/swimmer` (or whatever your Jekyll site's root directory is named):
+### 2. Running locally
 
 ```bash
 $ make serve
 ```
 
-Open <http://localhost:4000> in your browser, and voila.
+Open <http://localhost:4000> in your browser. The CSS will rebuild on changes automatically.
+
+### 3. Production build
+
+```bash
+$ make build
+```
+
+Output goes to `_site/`.
 
 ### 4. Serving it up
 
-If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
-
-1. Push your repo to GitHub.
-   1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
-   2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/swimmer`, use `http://username.github.io/swimmer/`. **Be sure to include the trailing slash.**
-2. Configure GitHub Pages to deploy from your default branch (or set up a GitHub Actions workflow).
-3. Done! Head to your GitHub Pages URL or custom domain.
-
-No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
+Push your repo to GitHub and use [GitHub Pages](https://pages.github.com) to host. Verify the `baseurl` option in `_config.yml` and `CNAME` if using a custom domain.
 
 ## Development
 
-CSS is handled via [Tailwind CSS](https://tailwindcss.com) v4. Source CSS files are located in `_css/`, compiled via `@tailwindcss/cli`, and output to `styles.css`.
+CSS lives in `_css/` as modular files compiled into `styles.css`. Edit the source files in `_css/`, then run `make css` (or use `make serve` for auto-rebuild).
+
+To regenerate screenshots:
+```bash
+$ make screenshots
+```
 
 ## Credits
 
