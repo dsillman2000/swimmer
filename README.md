@@ -1,8 +1,8 @@
 # Swimmer
 
-Swimmer is David's fork of [Poole](https://getpoole.com), the foundational Jekyll theme by [@mdo](https://twitter.com/mdo). The name comes from "David's Poole" &rarr; David Schwimmer &rarr; Swimmer.
+Swimmer is an opinionated yet invitingly simple Jekyll theme that extends and builds off of [Poole](https://getpoole.com), the foundational Jekyll setup by [@mdo](https://twitter.com/mdo). The name comes from "David's Poole" &rarr; David Schwimmer &rarr; Swimmer.
 
-Swimmer is an opinionated, full-featured Jekyll theme with a dedicated landing page, mobile sidebar, dual-mechanism dark mode, and Tailwind CSS v4 styling.
+Poole provides a clear and concise foundation for any Jekyll site. Swimmer takes that foundation and adds a dedicated landing page, mobile sidebar, dual-mechanism dark mode, self-hosted variable fonts, and Tailwind CSS v4 styling.
 
 <p>
   <img src="docs/screenshot-light.png" alt="Swimmer light mode" width="49%">
@@ -71,14 +71,14 @@ $ make screenshots
 
 ## Credits
 
-Swimmer is forked from [Poole](https://getpoole.com) by [@mdo](https://twitter.com/mdo). The original Poole project also produced the [Hyde](https://hyde.getpoole.com) and [Lanyon](https://lanyon.getpoole.com) themes.
+Swimmer extends and builds off of [Poole](https://getpoole.com), the foundational Jekyll setup by [@mdo](https://twitter.com/mdo). The original Poole project also produced the [Hyde](https://hyde.getpoole.com) and [Lanyon](https://lanyon.getpoole.com) themes.
 
 ## Author
 
 **David Sillman**
 - <https://github.com/dsillman2000>
 
-Originally created as [Poole](https://getpoole.com) by **Mark Otto** ([@mdo](https://github.com/mdo)).
+Originally built as [Poole](https://getpoole.com) by **Mark Otto** ([@mdo](https://github.com/mdo)).
 
 
 ## License
