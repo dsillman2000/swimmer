@@ -57,7 +57,7 @@ No matter your production or hosting setup, be sure to verify the `baseurl` opti
 
 ## Development
 
-CSS is handled via Jekyll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
+CSS is handled via [Tailwind CSS](https://tailwindcss.com) v4. Source CSS files are located in `_css/`, compiled via `@tailwindcss/cli`, and output to `styles.css`.
 
 ## Credits
 
