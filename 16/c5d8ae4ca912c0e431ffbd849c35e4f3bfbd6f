@@ -1,0 +1,26 @@
+_css/code.css
+  s_6ca060b84aba71::t_2ff167520e244a 15-16
+styles.css
+  s_6ca060b84aba71::t_63da6f15ed35c3 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "16c5d8ae4ca912c0e431ffbd849c35e4f3bfbd6f",
+  "prompts": {},
+  "humans": {
+    "h_4cc74772b10fd4": {
+      "author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  },
+  "sessions": {
+    "s_6ca060b84aba71": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_11eb3e794ffeFxrv1tYNW9JINW",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  }
+}
