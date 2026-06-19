@@ -79,7 +79,7 @@
 }
 
 .post-sidebar-list {
-  padding-left: 0;
+  padding-left: 1.25em;
   margin: 0;
   list-style: none;
 
@@ -101,12 +101,15 @@
     }
 
     &.active {
+      position: relative;
       font-weight: 600;
       color: var(--heading-color);
     }
 
     &.active::before {
-      content: "\2192\00a0";
+      content: "\2192";
+      position: absolute;
+      left: -1.25em;
     }
   }
 }
