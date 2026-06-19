@@ -13,7 +13,7 @@ Poole provides a clear and concise foundation for any Jekyll site. Swimmer takes
 
 This demo site was last updated {{ site.time | date: "%B %d, %Y" }}.
 
-Learn more and contribute on [GitHub]({{ site.github.repo }}).
+Learn more and contribute on [GitHub]({{ site.repository }}).
 
 ## What's included
 
@@ -34,6 +34,6 @@ Swimmer targets the latest versions of Chrome, Safari (mobile and desktop), Fire
 
 ## Download
 
-Swimmer is developed on and hosted with GitHub. Head to the [GitHub repository]({{ site.github.repo }}) for downloads, bug reports, and feature requests.
+Swimmer is developed on and hosted with GitHub. Head to the [GitHub repository]({{ site.repository }}) for downloads, bug reports, and feature requests.
 
 Thanks!
